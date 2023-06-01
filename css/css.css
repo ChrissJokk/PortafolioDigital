@@ -14,8 +14,6 @@ body {
     height: 100%;
 
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 
 /*Secciones*/
@@ -23,13 +21,14 @@ section{
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
-    padding:100px 20px;
-
-    scroll-snap-align: start;
+    min-height: 116vh;
+}
+section div{
+    display: grid;
+    place-items: center;
+    align-content: center;
 }
 
-/*Home*/
 #section1{
     background-image: url(../img/hero2.jpg);
     background-repeat: no-repeat;
@@ -38,5 +37,26 @@ section{
     position: relative;
 }
 
+/*Animación Secciones*/
+.hidden{
+    opacity: 0;
+    filter: blur(5);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 
 /*-----------Contenedor principal----------*/
+
+
+/*Clases especiales*/
+
+/*Fondo blur*/
+.bck-Blur{
+    backdrop-filter: blur(10px);
+
+}
