@@ -5,6 +5,10 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+
+    color: #537895;
 }
 
 /*-----------Contenedor principal----------*/
@@ -12,19 +16,22 @@ body {
 .contenedor{
     width: 100%;
     height: 100%;
-
+    /* scroll-snap-type:y proximity; */
     overflow-y: scroll;
+    
 }
 
 /*Secciones*/
 section{
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 116vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
-section div{
-    display: grid;
+section div {
     place-items: center;
     align-content: center;
 }
@@ -33,7 +40,7 @@ section div{
     background-image: url(../img/hero2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height:1000px;
+    height:100vh;
     position: relative;
 }
 
@@ -42,7 +49,7 @@ section div{
     opacity: 0;
     filter: blur(5);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 2s;
 }
 .show{
     opacity: 1;
@@ -50,8 +57,107 @@ section div{
     transform: translateX(0);
 }
 
+/*Color letras - secciones*/
+h1{
+    font-family: "Times New Roman";
+    color: aliceblue;
+    text-align: center;
+}
+
+h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+     font-size: 24px; 
+     font-style: normal; 
+     font-variant: normal; 
+     font-weight: 700; 
+     line-height: 26.4px; 
+    } 
+
+p{
+    text-align: center;
+}
+
 /*-----------Contenedor principal----------*/
 
+/*---------Sección contacto---------------*/
+.social-links{
+    display: flex;
+}
+
+.social-links:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.social-links:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.social-links:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.social-links:nth-child(5){
+    transition-delay: 800ms;
+}
+
+.social-links:nth-child(6){
+    transition-delay: 1000ms;
+}
+
+.social-links a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.social-links a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.2s;
+}
+
+.social-links a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    /* background: linear-gradient(-45deg, #ed1c94, #ffec17); */
+    background-color: #1d2951;
+    background-image: linear-gradient(315deg, #1d2951 0%, #dbe7fc 74%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social-links a:hover::after{
+    top: 0;
+}
+
+.social-links a:hover .fa-brands{
+    color: #fff;
+}
+
+.social-links a:hover{
+    transform: translateY(-10px);
+}
+
+@media only screen and (min-width: 320px) and 
+(max-width: 991px){
+    .social-links{
+        flex-direction: column;
+    }
+}
+
+/*---------Sección contacto---------------*/
 
 /*Clases especiales*/
 
@@ -59,4 +165,8 @@ section div{
 .bck-Blur{
     backdrop-filter: blur(10px);
 
+}
+
+.color-blanco{
+    color: aliceblue;
 }
