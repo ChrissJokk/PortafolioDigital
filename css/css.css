@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
 
-    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
 
     color: #537895;
 }
@@ -19,6 +19,11 @@ body {
     /* scroll-snap-type:y proximity; */
     overflow-y: scroll;
     
+}
+
+/*Nav*/
+#navbar-example2{
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
 }
 
 /*Secciones*/
@@ -37,11 +42,13 @@ section div {
 }
 
 #section1{
-    background-image: url(../img/hero2.jpg);
-    background-repeat: no-repeat;
+    /* background-image: url(../img/hero2.jpg);
+    background-repeat: no-repeat; */
     background-size: cover;
     height:100vh;
     position: relative;
+
+    max-width: 100%;
 }
 
 /*Animación Secciones*/
@@ -58,22 +65,14 @@ section div {
 }
 
 /*Color letras - secciones*/
-h1{
-    font-family: "Times New Roman";
-    color: aliceblue;
+section p{
     text-align: center;
+    color: aliceblue;
 }
 
-h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
-     font-size: 24px; 
-     font-style: normal; 
-     font-variant: normal; 
-     font-weight: 700; 
-     line-height: 26.4px; 
-    } 
-
-p{
+section h1{
     text-align: center;
+    color: #fff;
 }
 
 /*-----------Contenedor principal----------*/
@@ -150,6 +149,22 @@ p{
     transform: translateY(-10px);
 }
 
+.icon_cv{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    bottom: 0px;
+    left: opx;
+    z-index: 1;
+    color:#138f0a;
+}
+
+.icon_cv p{
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 320px) and 
 (max-width: 991px){
     .social-links{
@@ -164,9 +179,6 @@ p{
 /*Fondo blur*/
 .bck-Blur{
     backdrop-filter: blur(10px);
-
 }
 
-.color-blanco{
-    color: aliceblue;
-}
+/*<i class="fa-solid fa-cloud-arrow-down fa-bounce fa-2xl" style="color: #138f0a;"></i>*/
