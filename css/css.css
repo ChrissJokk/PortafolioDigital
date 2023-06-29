@@ -1,3 +1,7 @@
+/* Fuentes para el texto*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+
 body {
     position: relative;
     overflow-y: hidden;
@@ -107,8 +111,8 @@ section h1{
     height: 80px;
     text-align: center;
     text-decoration: none;
-    color: #000;
-    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    color: #138f0a;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
     margin: 0 30px;
     border-radius: 50%;
     position: relative;
@@ -181,4 +185,37 @@ section h1{
     backdrop-filter: blur(10px);
 }
 
-/*<i class="fa-solid fa-cloud-arrow-down fa-bounce fa-2xl" style="color: #138f0a;"></i>*/
+.font_bebas_neue{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.font_Press_Start_2P{
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*----------------*/
+
+/*Underline*/
+.nav-link{
+    position: relative;
+}
+
+.nav-link:hover{
+    
+}
+
+.nav-link::after{
+    content:'';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #138f0a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
