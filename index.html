@@ -41,7 +41,7 @@
           <div id="menu_nav" class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#section1"  onclick="collapse_nav()">Home</a>
+                <a class="nav-link" href="#section1"  >Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#section2"  >Sobre mi</a>
@@ -152,4 +152,10 @@
       </script>
 
   </body>
+  <script>
+    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
+  </script>
 </html> 
