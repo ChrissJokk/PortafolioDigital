@@ -18,9 +18,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 //     $('.navbar-collapse').collapse('hide');
 // });
 
-function collapse_nav(){
-    $('.navbar-collapse').collapse('hide');
-}
+
 
 
 //function click_menu() {  
