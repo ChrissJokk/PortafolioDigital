@@ -14,9 +14,13 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 /*Fix*/
-$('.navbar-nav>li>a').on('click', function(){
+// $('.navbar-nav>li>a').on('click', function(){
+//     $('.navbar-collapse').collapse('hide');
+// });
+
+function collapse_nav(){
     $('.navbar-collapse').collapse('hide');
-});
+}
 
 
 //function click_menu() {  
