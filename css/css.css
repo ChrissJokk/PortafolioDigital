@@ -256,20 +256,7 @@ section h2{
 
 
 /*section 3*/
-#section2 {
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url('/img/forest.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  #section3 {
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url('/img/forest.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  #section4 {
+.section_bkforest {
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url('/img/forest.jpg');
     background-repeat: no-repeat;
     background-size: cover;
