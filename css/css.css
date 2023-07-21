@@ -217,11 +217,11 @@ section h2{
 .icon_grow{
     transition: .3s ease;
 }
-.icon_grow:hover{
+/* .icon_grow:hover{
     -webkit-transform: scale(1.4);
     -ms-transform: scale(1.4);
     transform: scale(1.4);
-}
+} */
 
 .nav-link::after{
     content:'';
