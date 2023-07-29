@@ -131,7 +131,7 @@ section h2{
     transition: transform 0.5s;
 }
 
-.social-links a .fa-brands{
+.social-links a i{
     font-size: 30px;
     line-height: 80px;
     position: relative;
